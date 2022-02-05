@@ -5,7 +5,7 @@ body {
 
 	color: #000;
 
-	background: #e5e5e5;
+	background: #E5E5E5;
 
 	font-family: var(--font-family);
 }
@@ -31,15 +31,15 @@ a {
 
 :root {
 	--font-family: "Montserrat", sans-serif;
-	--black: #3b434e;
-	--gray: #a4a4a4;
-	--gray-light: #d2d2d2;
-	--gray-dark: #6c7077;
-	--white: #fff;
-	--primary: #6849df;
-	--primary-hover: #532cf0;
-	--red: #fc836d;
-	--red-light: #fea291;
-	--green: #007b48;
-	--green-light: #c8f8e4;
+	--black: #3B434E;
+	--gray: #A4A4A4;
+	--gray-light: #D2D2D2;
+	--gray-dark: #6C7077;
+	--white: #FFF;
+	--primary: #6849DF;
+	--primary-hover: #532CF0;
+	--red: #FC836D;
+	--red-light: #FEA291;
+	--green: #007B48;
+	--green-light: #C8F8E4;
 }
