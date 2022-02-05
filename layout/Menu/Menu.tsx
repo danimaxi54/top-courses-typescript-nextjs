@@ -32,9 +32,9 @@ export const Menu = (): JSX.Element => {
   const variantsChildren = {
     visible: {
       opacity: 1,
-      height: 29,
+      maxHeight: 36,
     },
-    hidden: { opacity: shouldReduceMotion ? 1 : 0, height: 0 },
+    hidden: { opacity: shouldReduceMotion ? 1 : 0, maxHeight: 0 },
   };
 
   const openSecondLevel = (secondCategory: string) => {

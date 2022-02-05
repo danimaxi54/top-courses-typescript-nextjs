@@ -1,12 +1,10 @@
 import { IProductProps } from './Product.props';
 import styles from './Product.module.css';
-import cn from 'classnames';
 import { Button, Card, Devider, Rating, Review, ReviewForm, Tag } from '..';
 import { declOfNum, priceRu } from '../../helpers/helpers';
 
 import { motion } from 'framer-motion';
 
-import Image from 'next/image';
 import { ForwardedRef, forwardRef, useRef, useState } from 'react';
 
 export const Product = motion(
@@ -42,7 +40,7 @@ export const Product = motion(
         <div className={className} ref={ref} {...props}>
           <Card className={styles.product} {...props} ref={reviewRef}>
             <div className={styles.logo}>
-              <Image
+              <img
                 src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
                 alt={product.title}
                 width={70}
@@ -53,18 +51,20 @@ export const Product = motion(
             <div className={styles.price}>
               <span>
                 <span className='visualyHidden'>цена</span>
-                {priceRu(product.price)}
+                {product.price && priceRu(product.price)}
               </span>
               {product.oldPrice && (
                 <Tag className={styles.oldPrice} color='green'>
                   <span className='visualyHidden'>скидка</span>
-                  {priceRu(product.price - product.oldPrice)}
+                  {product.price &&
+                    product.oldPrice &&
+                    priceRu(product.price - product.oldPrice)}
                 </Tag>
               )}
             </div>
             <div className={styles.credit}>
               <span className='visualyHidden'>кредит</span>
-              {priceRu(product.credit)}/
+              {product.credit && priceRu(product.credit)}/
               <span className={styles.month}>мес</span>
             </div>
             <div className={styles.rating}>

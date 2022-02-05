@@ -1,9 +1,11 @@
 {
   "name": "course-project",
+  "homepage": "https://danimaxi54.github.io/top-courses-typescript-nextjs",
   "private": true,
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
+    "export": "next export",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
@@ -16,6 +18,7 @@
     "cross-env": "^7.0.3",
     "date-fns": "^2.28.0",
     "framer-motion": "^6.2.3",
+    "gh-pages": "^3.2.3",
     "next": "12.0.9",
     "react": "17.0.2",
     "react-dom": "17.0.2",

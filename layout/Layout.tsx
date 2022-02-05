@@ -31,7 +31,7 @@ export const Layout = ({ children }: ILayoutProps): JSX.Element => {
           [styles.displayed]: isSkipLinkDisplayed,
         })}
         href='#!'
-        tabIndex={1}
+        tabIndex={0}
         onFocus={() => setIsSkipLinkDisplayed(true)}
         onKeyDown={skipContentAction}
       >
