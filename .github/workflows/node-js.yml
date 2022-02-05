@@ -28,6 +28,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: out/top-courses-typescript-nextjs # The folder the action should deploy.
+          folder: ./top-courses-typescript-nextjs # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
 
