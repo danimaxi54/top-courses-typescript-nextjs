@@ -1,43 +1,45 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  font-family: var(--font-family);
+	color: #000;
 
-  color: #000;
+	background: #e5e5e5;
 
-  background: #e5e5e5;
+	font-family: var(--font-family);
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 
-  color: inherit;
+	color: inherit;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .visualyHidden {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  position: absolute;
+	position: absolute;
+
+	overflow: hidden;
+
+	width: 0;
+	height: 0;
 }
 
 :root {
-  --font-family: 'Montserrat', sans-serif;
-  --black: #3b434e;
-  --gray: #a4a4a4;
-  --gray-light: #d2d2d2;
-  --gray-dark: #6c7077;
-  --white: #fff;
-  --primary: #6849df;
-  --primary-hover: #532cf0;
-  --red: #fc836d;
-  --red-light: #fea291;
-  --green: #007b48;
-  --green-light: #c8f8e4;
+	--font-family: "Montserrat", sans-serif;
+	--black: #3b434e;
+	--gray: #a4a4a4;
+	--gray-light: #d2d2d2;
+	--gray-dark: #6c7077;
+	--white: #fff;
+	--primary: #6849df;
+	--primary-hover: #532cf0;
+	--red: #fc836d;
+	--red-light: #fea291;
+	--green: #007b48;
+	--green-light: #c8f8e4;
 }

@@ -1,78 +1,83 @@
 .firstLevel {
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+	display: grid;
+	align-items: center;
 
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 500;
+	margin-top: 20px;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+	grid-template-columns: 24px 1fr;
+	gap: 20px;
 }
 
 .firstLevel:hover,
 .firstLevelActive {
-  color: var(--primary);
+	color: var(--primary);
 }
 
 .firstLevelList {
-  padding: 0;
+	padding: 0;
 
-  list-style: none;
+	list-style: none;
 }
 
 .firstLevelActive svg,
 .firstLevel:hover svg {
-  fill: var(--primary);
+	fill: var(--primary);
 }
 
 .secondLevel {
-  margin-bottom: 10px;
-  padding: 0;
+	margin-bottom: 10px;
+	padding: 0;
 
-  font-family: inherit;
-  color: var(--gray-dark);
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: uppercase;
+	cursor: pointer;
+	text-transform: uppercase;
 
-  background: none;
+	color: var(--gray-dark);
 
-  border: none;
+	border: none;
 
-  cursor: pointer;
+	background: none;
+
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 300;
 }
 
 .secondBlock {
-  margin-top: 15px;
-  padding: 0 0 0 32px;
+	margin-top: 15px;
+	padding: 0 0 0 32px;
 
-  list-style: none;
+	list-style: none;
 
-  border-left: 2px solid #dfdfdf;
+	border-left: 2px solid #dfdfdf;
 }
 
 .secondLevelBlock {
-  overflow: hidden;
-  padding: 0;
+	overflow: hidden;
 
-  list-style: none;
+	padding: 0;
+
+	list-style: none;
 }
 
 .thirdLevel {
-  display: block;
-  margin-bottom: 10px;
+	display: block;
 
-  color: var(--gray-dark);
-  font-size: 14px;
-  font-weight: 500;
+	margin-bottom: 10px;
 
-  outline-offset: -1px;
+	cursor: pointer;
 
-  cursor: pointer;
+	color: var(--gray-dark);
+
+	outline-offset: -1px;
+
+	font-size: 14px;
+	font-weight: 500;
 }
 
 .thirdLevel:hover,
 .thirdLevelActive {
-  color: var(--primary);
+	color: var(--primary);
 }
